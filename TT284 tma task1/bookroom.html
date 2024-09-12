@@ -1,0 +1,130 @@
+<html>
+    <head><title>Room Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .heading img {
+               height: 100px;
+               float:  left;
+               margin-right: 30px;
+           }
+           body {
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+
+                background-image: url(bg2.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                margin: 0;
+                padding: 0; 
+            }
+
+            header {
+                
+                
+                padding: 1rem;
+            }
+            main{
+                max-width: 650px;
+                padding: 28px;
+                margin: 0 28px;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 15px 20px rgba(0, 0, 0,0.6);
+            }
+            .input-box input{
+                padding: 0 10px;
+                height: 40px;
+                width: 95%;
+                border-radius: 5px;
+                border-radius: 1px;
+
+            }
+            .input-box label{
+                color: white;
+            }
+            .input-box input:is(focus,:valid){
+                box-shadow: 0 3px 6px rgba(0, 0, 0,0.6);
+
+            }
+            .content{
+                max-height: 300px;
+                overflow: auto;
+            }
+            .input-box{
+                margin-bottom: 12px;
+                width: 100%;
+                
+            }
+            
+            
+            .input-box:nth-child(2n){
+                justify-content: space-between;
+            }
+            .input-box:focus{
+                border: 2px solid black;
+
+            }
+            h1{
+                color: white;
+            }
+            p{
+                color: white;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <body>
+        <div class="heading">
+            
+            <img src="logo2.png" alt="TT284 Hotel">
+        </div>
+        <header>
+            <h1>Booking Section</h1>
+        </header>
+            <main>
+            <p>Please fill out the following to book a room:</p>
+            
+            
+            <form method="post">
+                <div class="input-box">
+                <label for="name">First Name:</label>
+                <input type="text" id="First Name" name="First Name" required placeholder="Enter your First Name">
+                </div>
+                <div class="input-box">
+                <label for="family">Last Name:</label>
+                <input type="text" id="Last Name" name="Last Name" required placeholder="Enter your Last Name">
+                </div>
+                <div class="input-box">
+                <label for="check-ins">check-in Date:</label>
+                <input type="date" id="check-in date" name="check-in date" required>
+                </div>
+                <div class="input-box">
+                <label for="number of people">Number of People:</label>
+                <input type="number" id="number of People" name="number of people" min="1" max="10" required placeholder="00">
+                </div>
+                <div class="input-box">
+                <label for="Phone number">Phone Number:</label>
+                <input type="number" id="phone number" name="phone number"required>
+                </div>
+                <div class="input-box">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your Email">
+                </div>
+                <div class="input-box">
+                   <label for="comment">Comments:</label>
+                </div>
+                <div class="input-box">
+                <textarea rows="5" cols="20" required placeholder="Enter Your Comments"></textarea>
+                </div>
+                
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+
+
+        
+            
+        </main>
+    </body>
+</html>

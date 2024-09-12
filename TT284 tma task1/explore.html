@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <title>Explore our Hotel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .heading img {
+               height: 100px;
+               float:  left;
+               margin-right: 30px;
+           }
+           body {
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+                padding: 0 0 80px;
+                margin: 0;
+                
+                
+                background-color: #0F273F;
+                background-size: cover;
+                background-repeat: repeat;
+                background-position: center center;
+                
+                
+            }
+            header {
+                background-color: #0F273F;
+                font-family: sans-serif;
+                font-size: 17px;
+                color: #EBEBE3;
+                padding: 1rem;
+                
+                
+            }
+            .info{
+                
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                
+                z-index: -1;
+            }
+            main {
+                margin-top: 80px; 
+            }
+            #act-3{
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+            #act-3 p{
+                padding: 20px;
+                border: 2px solid white;
+                text-align: center;
+
+            }
+            #act-3 p img{
+                width: 100px;
+                height: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                margin-top: 10px;
+            }
+            .details {
+                width: 100%;
+            }
+            .details {
+                 margin-bottom: 20px; 
+                }
+            #acco{
+                margin: 100px auto;
+                width: 450px;
+            }
+            #acco li{
+                list-style: none;
+                width: 100%;
+                margin-bottom: 10px;
+                background: #EBEBE3;
+                padding: 10px;
+                border-radius: 4px;
+            }
+            #acco li label{
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 18px;
+                font-weight: 500;
+                cursor: pointer;
+                color: #c20000;
+            }
+            #acco li label span{
+                transform: rotate(90deg);
+                font-size: 22px;
+                color: #3333;
+            }
+            #acco label + input[type="radio"]{
+                display: none;
+            }
+            #acco .cont{
+                padding: 0 10px;
+                line-height: 26px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s;
+            }
+            #acco label + input[type="radio"]:checked + .cont{
+                max-height: 400px;
+            }
+
+
+
+            
+
+
+            
+        
+        
+           
+  
+
+        </style>
+         
+      
+    </head>
+    <body>
+        <div class="heading">
+            
+            <img src="logo2.png" alt="TT284 Hotel">
+        </div>
+        <header>
+            <h1>Hotel informations</h1>
+        </header>
+    
+        <div class="info" style="margin-top: 120px;">
+            
+        <main>
+            <ul id="acco">
+            <li>
+            <label for="First">Rooms<span>&#x3e;</span></label>
+            <input type="radio" name="acco" id="First" checked>
+            
+            <div class="cont">
+                <p>Regular Room: Our Regular Rooms will keep you confy and keep your walet vary warm.
+                    <br>
+                <img src="rroms.png"alt="TT284" width="200" height="150" style="border: 2px solid white; border-radius: 10px;" >
+                
+            
+        
+    
+                <br>
+                <p>Premium Room: If you want a little more comfortability but still don't want to upgrade to a suite don't worry at TT we got you covered.</p>
+                <br>
+                <img src="proom.png"alt="TT284" width="200" height="150" style="border: 2px solid white; border-radius: 10px;" >
+            </div>
+            </li>
+            </ul>
+            
+            
+            <ul id="acco">
+                <li>
+            <label for="second">Suites<span>&#x3e;</span></label>
+            <input type="radio" name="acco" id="second">
+            <div class="cont">
+            In for the finest? The TT284 suites are just what you need. Spacious living areas, lavish soaking tubs, private balconies... Every detail has been meticulously though of to exceed your expectations.
+            <br>
+            <img src="hotelsuits.png"alt="TT284" width="200" height="150" style="border: 2px solid white; border-radius: 10px;" >
+            </div>
+            </li>
+            </ul>
+            <ul id="acco">
+                <li>
+            <label for="Third">Dinning<span>&#x3e;</span></label>
+            <input type="radio" name="acco" id="Third">
+            <div class="cont">
+            Our Michelin star restaurants offer very tasty food.You can enjoy that sitting in our luxury dinning enjoy the sea view from the window. From our Salades to our Wagyu steak,there's somthing for evreyonr to enjoy.
+            <br>
+            <img src="dinning.png" alt="TT284" width="200" height="150" style=" border: 2px solid white; border-radius: 10px;">
+            </div>
+            </li>
+            </ul>
+            <ul id="acco">
+                <li>  
+            <label for="fourth">Hotel Services<span>&#x3e;</span></label>
+            <input type="radio" name="acco" id="fourth">
+            <div class="cont">
+                •	24/7 room service<br>
+                •	Free Wifi<br>
+                •	Tour Desk<br>
+                •	In-Room Dining<br>
+                
+                    
+            </div>
+                </li>
+            </ul>
+                
+
+            <ul id="acco">
+                <li>
+            <label for="fifth"> Activities<span>&#x3e;</span></label>
+            <input type="radio" name="acco" id="fifth">
+            <div class="cont">
+            <div id="act-3">
+                
+                <p>Swimming
+                    <img src="sw1.png" style="border: 2px solid white; border-radius: 10px;">
+                </p>
+                <p>Yoga
+                    <img src="yoga.png" style="border: 2px solid white; border-radius: 10px;">
+                </p>
+                <p>Movies
+                    <img src="cn1.png" style="border: 2px solid white; border-radius: 10px;">
+                </p>
+            </li>
+                
+            </div>
+        </div>
+
+            
+        </main>
+        </div>
+        
+    </body>
+</html>
